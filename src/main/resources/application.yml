@@ -1,0 +1,16 @@
+server:
+  port: 1786
+
+#Database specific properties
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/whatsapCloneDB
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#ORM Specific Properties
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
