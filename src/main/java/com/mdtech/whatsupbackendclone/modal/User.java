@@ -2,25 +2,21 @@ package com.mdtech.whatsupbackendclone.modal;
 
 import jakarta.persistence.*;
 
-import javax.management.Notification;
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(length = 20)
+    @Column(length = 20, unique = true)
     private String userName;
     @Column(length = 50)
     private String firstName;
     @Column(length = 50)
     private String lastName;
-    @Column(length = 50)
+    @Column(length = 50, unique = true)
     private String email;
-    @Column(length = 12)
+    @Column(length = 12, unique = true)
     private String contactNo;
     @Column(length = 150)
     private String profilePic;
