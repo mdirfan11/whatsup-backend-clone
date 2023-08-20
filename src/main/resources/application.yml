@@ -1,5 +1,5 @@
 server:
-  port: 1786
+  port: 3001
 
 #Database specific properties
 spring:

@@ -31,7 +31,7 @@ public class AppSecurityConfig {
                 .cors(cors -> cors.configurationSource(request -> {
 
                     CorsConfiguration cfg = new CorsConfiguration();
-                    cfg.setAllowedOrigins(List.of("http://localhost:3001/"));
+                    cfg.setAllowedOrigins(List.of("http://localhost:3005/"));
                     cfg.setAllowedMethods(Collections.singletonList("*"));
                     cfg.setAllowCredentials(true);
                     cfg.setAllowedHeaders(Collections.singletonList("*"));
